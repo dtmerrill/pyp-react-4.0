@@ -95,7 +95,7 @@ const SearchDrinks = () => {
           </label>
           <input
             id="userInput"
-            className="input is-primary is-medium"
+            className="input is-info is-medium"
             type="text"
             placeholder="Please type your city name..."
             onChange={(e) => {
@@ -105,7 +105,7 @@ const SearchDrinks = () => {
         </div>
         <button
           id="weatherButton"
-          className="button is-primary is-outlined has-text-black is-rounded city-button"
+          className="button is-info is-outlined has-text-black is-rounded city-button"
           onClick={() => {
             getTheWeather();
             getTheDrink();
@@ -116,7 +116,7 @@ const SearchDrinks = () => {
         </button>
       </div>
       <div class="container" id="issueContainer">
-        <p class="is-size-4 has-text-centered has-text-primary has-background-primary-light">
+        <p class="is-size-4 has-text-centered has-text-info has-background-info-light">
           <br />
           {weather ? "Here is the weather for: " + weather.name : ""}
         </p>
@@ -136,7 +136,7 @@ const SearchDrinks = () => {
             <article class="tile is-child box">
               <p
                 id="drink1Name"
-                class="drinkNames is-size-2 mb-5 has-text-primary"
+                class="drinkNames is-size-2 mb-5 has-text-info"
               >
                 {drink.drinks ? "Drink Title: " + drink.drinks[0].strDrink : ""}
               </p>
@@ -152,7 +152,7 @@ const SearchDrinks = () => {
               </figure>
               <button
                 id="btn"
-                className="button is-primary is-outlined has-text-black is-rounded mt-4 recipe-button"
+                className="button is-info is-outlined has-text-black is-rounded mt-4 recipe-button"
                 // onClick={selectDrink}
               >
                 <Link
@@ -164,7 +164,7 @@ const SearchDrinks = () => {
                   {" "}
                   View Recipe{" "}
                 </Link>
-                View Recipe
+                
               </button>
             </article>
           </div>

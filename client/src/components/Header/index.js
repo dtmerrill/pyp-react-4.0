@@ -9,7 +9,7 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="hero is-primary">
+    <header className="hero is-info">
       <div className="hero-body">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <Link className="" to="/">
@@ -29,12 +29,10 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="button is-primary is-outlined has-text-black  is-rounded city-button" to="/Login-SignUp">
-                Login
+              <Link className="button is-white is-outlined has-text-white  is-rounded city-button" to="/Login-SignUp">
+                Login/Sign-Up
               </Link>
-                <Link className="is-rounded button is-primary is-outlined has-text-black  is-rounded city-button" to="/Login-SignUp">
-                Sign-Up
-              </Link>
+
             </>
           )}
         </div>
