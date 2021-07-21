@@ -77,7 +77,7 @@ const SearchDrinks = () => {
               <select>
                 <option>Select dropdown</option>
                 <option>Bourbon</option>
-                <option>whisky</option>
+                <option>Whisky</option>
                 <option>Gin</option>
                 <option>Vodka</option>
                 <option>Brandy</option>
