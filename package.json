@@ -7,8 +7,7 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon",
-    "seed": "node seeders/seed.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "seed": "node seeders/seed.js"
   },
   "keywords": [],
   "author": "",
