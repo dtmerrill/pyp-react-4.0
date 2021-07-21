@@ -43,6 +43,7 @@ const SignUp = () => {
       <div className="">
         <div className="">
           <h4 className="classloginsignup p-3">Sign Up</h4>
+          <p className="p-2 pb-1">Need an Account? Sign-Up today to start creating your custom drink selections.</p>
           <div className=" p-2">
             {data ? (
               <p>
@@ -76,7 +77,7 @@ const SignUp = () => {
                   onChange={handleChange}
                 /><br/>
                 <button
-                  className=" is-rounded button is-primary is-outlined has-text-black  is-rounded city-button"
+                  className=" is-rounded button is-infowhite is-outlined has-text-black  is-rounded city-button"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >

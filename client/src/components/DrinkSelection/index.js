@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
 
 const DrinkSelection = () => {
+    const [drink] = useState({
+      drinks: drink,
+      isLoading: true,
+    });
+  
+  
+    const drinkAPI = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
     
-  const [drink, updateDrink] = useState({});
+  // const [drink, updateDrink] = useState({});
 
   // function getTheDrink() {
   //   // uses the city "state" variable to fill out the queryURL's
@@ -20,14 +27,14 @@ const DrinkSelection = () => {
             <article class="tile is-child box">
               <p
                 id="drink1Name"
-                class="drinkNames is-size-2 mb-5 has-text-primary"
-              >
-                {drink.drinks ? ('Drink Title: ' + drink.drinks[0].strDrink) : ''}
+                className="drinkNames is-size-2 mb-5 has-text-info"
+              >Drink Title:
+                {drink.drink ? ( drink[0].strDrink) : ''}
               </p>
-              <figure class="image is-4by3">
+              <figure className="image">
               <img
                   id="image"
-                  src={drink.drinks ? drink.drinks[0].strDrinkThumb : ""}
+                  src={drink.drink ? drink.drinks[0].strDrinkThumb : ""}
                   alt="Placeholder"
                 />
               </figure>
